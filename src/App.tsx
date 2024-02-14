@@ -1,11 +1,16 @@
-import { Button } from "@/components/ui/button";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { Outlet } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Addis Living</h1>
-      <Button>Click me</Button>
-    </>
+    <div className="bg-black">
+      <Header />
+      <Toaster />
+      <Outlet />
+      <Footer />
+    </div>
   );
 }
 
