@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# Addis Arts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 👉 [View Live](https://addis-arts.vercel.app/)
 
-Currently, two official plugins are available:
+## Introduction
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Addis Arts is an online gallery dedicated to showcasing the diverse and dynamic art scene of Ethiopia.
 
-## Expanding the ESLint configuration
+## To Run Locally
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 1. Clone the repo
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+git clone https://github.com/mikiasworash/addis-arts.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### 2. Install Dependencies
+
+```
+cd addis-arts
+
+npm install
+```
+
+### 3. Create `.env.local` file in the root directory and setup your environment variables
+
+```
+VITE_CLERK_PUBLISHABLE_KEY=
+```
+
+### 4. Run the development server
+
+```
+npm run dev
+```
+
+## License
+
+Licensed under the [MIT License](https://opensource.org/licenses/MIT).

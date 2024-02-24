@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 
 const Header = () => {
   return (
@@ -11,25 +12,29 @@ const Header = () => {
         </span>
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-400 md:mt-0">
           <li>
-            <Link
-              to="/"
-              className="hover:underline underline-offset-4 me-4 md:me-6"
-            >
-              Explore
-            </Link>
+            <SignedIn>
+              <UserButton afterSignOutUrl="/" />
+            </SignedIn>
           </li>
           <li>
-            <Link
-              to="/"
-              className="hover:underline underline-offset-4 me-4 md:me-6"
-            >
-              Offers
-            </Link>
+            <SignedOut>
+              <Link
+                to="/login"
+                className="hover:underline underline-offset-4 mr-4"
+              >
+                Sign In
+              </Link>
+            </SignedOut>
           </li>
           <li>
-            <Link to="/profile" className="hover:underline underline-offset-4">
-              Profile
-            </Link>
+            <SignedOut>
+              <Link
+                to="/register"
+                className="hover:underline underline-offset-4"
+              >
+                Sign Up
+              </Link>
+            </SignedOut>
           </li>
         </ul>
       </div>

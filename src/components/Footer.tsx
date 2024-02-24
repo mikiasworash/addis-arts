@@ -7,7 +7,7 @@ function Auth() {
         <span className="text-sm text-gray-400 sm:text-center">
           © {new Date().getFullYear()}{" "}
           <Link to="/" className="hover:underline underline-offset-4">
-            Addis arts
+            Addis Arts
           </Link>
           . All Rights Reserved.
         </span>
@@ -25,13 +25,13 @@ function Auth() {
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-400 md:mt-0">
           <li>
             <Link
-              to="#"
+              to="/about"
               className="hover:underline underline-offset-4 me-4 md:me-6"
             >
               About
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="#"
               className="hover:underline underline-offset-4 me-4 md:me-6"
@@ -46,9 +46,9 @@ function Auth() {
             >
               Terms
             </Link>
-          </li>
+          </li> */}
           <li>
-            <Link to="#" className="hover:underline underline-offset-4">
+            <Link to="/contact" className="hover:underline underline-offset-4">
               Contact
             </Link>
           </li>

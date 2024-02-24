@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <div className="bg-black">
+    <div className="bg-black font-mono">
       <Header />
       <Toaster />
       <Outlet />
