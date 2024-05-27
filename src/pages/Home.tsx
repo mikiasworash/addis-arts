@@ -65,27 +65,27 @@ const cards = [
     content: <SkeletonOne />,
     className: "md:col-span-2",
     thumbnail:
-      "https://source.unsplash.com/blue-black-and-orange-abstract-painting-3Sf_G9m0gcQ",
+      "https://res.cloudinary.com/dlyd6gs9k/image/upload/v1716843408/addis_arts/ojboggy1s5vhk3k2twwe.jpg",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail:
-      "https://source.unsplash.com/water-droplets-on-glass-panel-wzkv5p5CIRk",
+      "https://res.cloudinary.com/dlyd6gs9k/image/upload/v1716843408/addis_arts/tdpxwqxnvmyxjl1avsyv.jpg",
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
     thumbnail:
-      "https://source.unsplash.com/floral-persons-portrait-graffiti-fT49QnFucQ8",
+      "https://res.cloudinary.com/dlyd6gs9k/image/upload/v1716843408/addis_arts/ky237g9gjt5qttvu227q.jpg",
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-2",
     thumbnail:
-      "https://source.unsplash.com/a-painting-of-a-group-of-men-on-horses-5EUh-tq31eA",
+      "https://res.cloudinary.com/dlyd6gs9k/image/upload/v1716843408/addis_arts/hbikocbifncayv8vpbzd.jpg",
   },
 ];
